@@ -1,0 +1,47 @@
+baseURL = "https://davecap.com/"
+languageCode = "en-us"
+title = "This is davecap.com"
+theme="archie"
+
+copyright = "© davecap.com"
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+# articles per page
+paginate=3
+
+[params]
+	mode="light" # color-mode → light,dark or auto
+	featherIconsCDN=true
+	subtitle = ""
+
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/davecap"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/davc"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "History"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
