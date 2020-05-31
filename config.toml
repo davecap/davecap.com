@@ -4,8 +4,8 @@ title = "davecap's place"
 theme = "anubis"
 
 paginate = 10
-disqusShortname = davecap 
-googleAnalytics = UA-25251051-1
+disqusShortname = "davecap"
+googleAnalytics = "UA-25251051-1"
 
 copyright = "© davecap.com"
 
