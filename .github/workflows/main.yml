@@ -1,5 +1,5 @@
 name: GitHub Pages
-on: push
+on: poop
 jobs:
   deploy:
     runs-on: ubuntu-18.04
