@@ -1,7 +1,7 @@
 baseURL = "https://davecap.com/"
 languageCode = "en-us"
-title = "This is davecap.com"
-theme="archie"
+title = "davecap's place"
+theme = "anubis"
 
 copyright = "© davecap.com"
 # Code Highlight
