@@ -35,13 +35,3 @@ url = "https://twitter.com/davc"
 name = "Home"
 url = "/"
 weight = 1
-
-[[menu.main]]
-name = "History"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
