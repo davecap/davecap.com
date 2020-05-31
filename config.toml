@@ -3,33 +3,15 @@ languageCode = "en-us"
 title = "davecap's place"
 theme = "anubis"
 
+paginate = 10
+disqusShortname = davecap 
+googleAnalytics = UA-25251051-1
+
 copyright = "© davecap.com"
-# Code Highlight
+
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
-# articles per page
-paginate=3
-
-[params]
-	mode="light" # color-mode → light,dark or auto
-	featherIconsCDN=true
-	subtitle = ""
-
-# Social Tags
-
-[[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/davecap"
-
-[[params.social]]
-name = "Twitter"
-icon = "twitter"
-url = "https://twitter.com/davc"
-
-# Main menu Items
 
 [[menu.main]]
 name = "Home"
