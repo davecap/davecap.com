@@ -7,3 +7,6 @@
 [submodule "themes/harbor"]
 	path = themes/harbor
 	url = https://github.com/matsuyoshi30/harbor.git
+[submodule "themes/etch"]
+	path = themes/etch
+	url = git@github.com:LukasJoswiak/etch.git
