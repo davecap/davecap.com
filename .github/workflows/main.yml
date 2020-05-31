@@ -23,7 +23,7 @@ jobs:
         with:
           personal_token: ${{ secrets.TOKEN }}
           publish_branch: master
-          publish_folder: public
+          publish_dir: public
           external_repository: davecap/davecap.github.io
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
