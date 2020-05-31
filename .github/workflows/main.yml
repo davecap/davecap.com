@@ -1,5 +1,5 @@
 name: GitHub Pages
-on: poop
+on: push
 jobs:
   deploy:
     runs-on: ubuntu-18.04
@@ -24,6 +24,7 @@ jobs:
           personal_token: ${{ secrets.TOKEN }}
           publish_branch: master
           publish_folder: public
+          external_repository: davecap/davecap.github.io
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           cname: davecap.com
