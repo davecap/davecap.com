@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const ventures = [
   {
@@ -22,35 +23,43 @@ const Portfolio = () => {
             Our ventures and investments
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="space-y-8">
             {ventures.map((venture) => (
               <Card 
                 key={venture.name}
-                className="group hover:shadow-elegant transition-smooth border-border bg-card hover:scale-105"
+                className="group hover:shadow-elegant transition-smooth border-border bg-card"
               >
-                <CardHeader className="pb-4">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <CardTitle className="text-2xl font-bold mb-3">{venture.name}</CardTitle>
-                      <CardDescription className="text-base text-accent font-semibold">
-                        {venture.type}
-                      </CardDescription>
-                    </div>
-                    <a
-                      href={venture.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-accent transition-smooth"
-                    >
-                      <ArrowUpRight className="w-6 h-6" />
-                    </a>
+                <div className="flex flex-col md:flex-row gap-6 p-6">
+                  <div className="w-full md:w-48 flex-shrink-0">
+                    <AspectRatio ratio={1} className="bg-muted rounded-lg flex items-center justify-center">
+                      <div className="text-muted-foreground/40 text-sm font-medium">Logo</div>
+                    </AspectRatio>
                   </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground font-medium text-base">
-                    {venture.description}
-                  </p>
-                </CardContent>
+                  
+                  <div className="flex-1 flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-start justify-between mb-4">
+                        <div>
+                          <CardTitle className="text-3xl font-bold mb-2">{venture.name}</CardTitle>
+                          <CardDescription className="text-base text-accent font-semibold">
+                            {venture.type}
+                          </CardDescription>
+                        </div>
+                        <a
+                          href={venture.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-accent transition-smooth"
+                        >
+                          <ArrowUpRight className="w-6 h-6" />
+                        </a>
+                      </div>
+                      <p className="text-muted-foreground font-medium text-lg">
+                        {venture.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </Card>
             ))}
           </div>
